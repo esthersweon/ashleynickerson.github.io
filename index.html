@@ -5,6 +5,7 @@
 			Ashley's Portfolio
 		</title>
 		<style>
+			/* remove styles to external stylesheet */
 			header {
 				vertical-align
 			}
@@ -13,9 +14,11 @@
 				text-align: center;
 				list-style-type: none;
 				margin: 5px;
+					/* fix indenting */
 			    	padding: 5px;
 			}
 			li {
+					/* fix indenting */
 			    	display: inline;
 			}
 			ul {
@@ -31,10 +34,15 @@
 	</head>
 	<body>
 		<header>
+		<!-- indent in here for your image -->
 		<img src="Images/AMlogo.png">
+		<!-- Also, it's common practice to use all lowercase for directory names (keeps it consistent), so I would recommend "images" vs. "Images" -->
 		</header>
+
+		<!-- I would argue that your nav is part of your header – include it within header tag -->
 		<nav>
 			<ul>
+				<!-- make sure to use lowercase li -->
 				<Li>Home</Li>
 				<Li>Portfolio</Li>
 				<Li>About</Li>
@@ -42,7 +50,10 @@
 				<Li>Contact</Li>
 			</ul>
 		<nav>
-		
+
+		<!-- Since you have a "header" and "footer" section, I'd also include a "main" tag for the rest of your content -->
+
+		<!-- I would add a section tag here to contain all your "Intro" content -->
 		<h1>
 			Hi there.
 		</h1>
@@ -56,6 +67,8 @@
 		<blockquote>
 			"This is my first portfolio website so do not judge it too hard" -Ashley
 		</blockquote>
+		
+		<!-- I would add a section tag here to contain all your "Background" content -->
 		<h1>
 			Background
 		</h1>
@@ -66,6 +79,8 @@
 			Skills
 		</h1>
 		<h2>
+			<!-- this is not a heading, so much as it is a list -->
+			<!-- use semantic HTML like <ul> or <ol> and then use CSS to make larger -->
 			Photoshop
 			Illustrator
 			Indesign
@@ -75,15 +90,19 @@
 			After Effects
 			Premiere Pro
 		</h2>
+		<!-- I would add a section tag here to contain all your "Experience" content -->
 		<h1>
 			Experience
 		</h1>
 		<h2>
+			<!-- this is not a heading, so much as it is a list -->
+			<!-- use semantic HTML like <ul> or <ol> and then use CSS to make larger -->
 			SEOteric
 			UGA Football
 			CNN
 		</h2>
 		<footer>
+			<!-- the below should probably be encapsulated in a list – try not to have naked text just floating on different lines -->
 			678-699-0520
 			ashleynickerson21@gmail.com
 			@_ashleynickerson_
